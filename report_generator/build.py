@@ -144,6 +144,13 @@ def _front(doc, ctx, nar):
         pp = right.add_paragraph(); pp.paragraph_format.space_after = Pt(1)
         run(pp, f"{k}: ", size=9, color=GREY); run(pp, val, size=9, bold=True)
 
+    hp = right.add_paragraph(); hp.paragraph_format.space_before = Pt(4)
+    run(hp, "Major shareholders", size=10, bold=True, color=NAVY)
+    for k, val in [("Trident Water (E. Razon)", "56.9%"), ("Public float", "~43%"),
+                   ("Ayala group", "preferred only")]:
+        pp = right.add_paragraph(); pp.paragraph_format.space_after = Pt(1)
+        run(pp, f"{k}: ", size=9, color=GREY); run(pp, val, size=9, bold=True)
+
     # financial summary mini-table
     para(doc, "", after=2)
     _fin_summary(doc, ctx)
@@ -236,6 +243,8 @@ def _key_highlights(doc, ctx):
         vr.append((label, [s]))
     _grid(doc, vr, first_w=2.6)
 
+    para(doc, "Coverage initiation — no prior estimates shown for a previous-vs-current comparison.",
+         size=8, color=GREY, before=4)
     doc.add_picture(str(charts.valuation_bar(mv)), width=Inches(3.2))
 
 

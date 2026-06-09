@@ -59,8 +59,10 @@ def compute() -> dict:
     capex_pct0 = capex0 / revenue0
     capex_pct_term = fd["capex_pct_revenue_terminal"]
     tax = v["tax_rate"]
-    ni0 = inc.get("net_income_parent", P9) * ANNUALIZE          # base parent net income
+    # Bottom line is annualized by the seasonality factor (soft Q4), NOT x4/3.
+    ni0 = inc.get("net_income_parent", P9) * fd["fy_net_income_factor"]
     net_margin = ni0 / revenue0
+    pref_div = fd["preferred_dividend_annual"]
     shares = filing.cover.common_shares_outstanding
 
     # ── WACC (CAPM + country risk premium; observed beta) ─────────────────
@@ -86,7 +88,7 @@ def compute() -> dict:
         proj["ebit"][y] = rev[y] * ebit_margin
         proj["nopat"][y] = proj["ebit"][y] * (1 - tax)
         proj["net_income"][y] = ni0 if y == v["base_year"] else rev[y] * net_margin
-        proj["eps"][y] = proj["net_income"][y] * 1000 / shares
+        proj["eps"][y] = (proj["net_income"][y] - pref_div) * 1000 / shares   # common basis
         proj["da"][y] = rev[y] * da_pct
         # capex fades linearly from current peak (base year) to terminal level
         if y == v["base_year"]:

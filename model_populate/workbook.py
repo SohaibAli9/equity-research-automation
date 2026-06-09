@@ -28,7 +28,7 @@ A = {
     "ebit_m": 15, "da_pct": 16, "capex_b": 17, "capex_t": 18, "nwc": 19,
     "rev0": 21, "ni0": 22, "net_margin": 23,
     "g25": 25, "g26": 26, "g27": 27, "g28": 28, "g29": 29,
-    "net_debt": 31, "nci": 32, "pref": 33, "shares": 34, "price": 35,
+    "net_debt": 31, "nci": 32, "pref": 33, "shares": 34, "price": 35, "pref_div": 36,
 }
 def AR(key: str) -> str:                          # absolute Assumptions ref
     return f"Assumptions!$B${A[key]}"
@@ -68,6 +68,7 @@ def _assumptions_sheet(wb, R):
         (A["pref"], "Preferred (book, ₱000)", val["preferred"], S.NUM),
         (A["shares"], "Common shares outstanding", val["common_shares"], "#,##0"),
         (A["price"], "Current price (₱)", val["current_price"], S.PRICE),
+        (A["pref_div"], "Preferred dividend (₱000/yr)", R["_a"]["forecast_drivers"]["preferred_dividend_annual"], S.NUM),
     ]
     for row, label, value, fmt in inputs:
         S.put(ws, f"A{row}", label)
@@ -133,7 +134,7 @@ def _model_sheet(wb):
     # Net income (parent) + EPS for the note's financial summary
     row(13, "Net income (parent)",
         lambda i, c: f"={AR('ni0')}" if i == 0 else f"={c}4*{AR('net_margin')}")
-    row(14, "EPS (₱)", lambda i, c: f"={c}13*1000/{AR('shares')}", fmt=S.NUM2)
+    row(14, "EPS (₱)", lambda i, c: f"=({c}13-{AR('pref_div')})*1000/{AR('shares')}", fmt=S.NUM2)
     row(15, "EPS growth",
         lambda i, c: "" if i == 0 else f"={c}14/{COLS[i-1]}14-1", fmt=S.PCT)
     return ws
@@ -289,7 +290,7 @@ def build() -> Workbook:
     R["_a"]["forecast_drivers"] = yaml.safe_load(
         (config.CONFIG_DIR / "assumptions.yaml").read_text())["forecast_drivers"]
     F = Filing.model_validate_json((config.output_dir_for() / "financials.json").read_text())
-    R["_ni0"] = F.income.get("net_income_parent", "ytd9m_2024") * (4 / 3)
+    R["_ni0"] = R["projections"]["net_income"][R["years"][0]]   # corrected FY2024E base NI
 
     wb = Workbook()
     wb.remove(wb.active)

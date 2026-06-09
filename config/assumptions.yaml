@@ -40,6 +40,11 @@ forecast_drivers:
     2029: 0.05
   ebit_margin: null                  # null -> derive from filing (operating income / revenue)
   da_pct_revenue: null               # null -> derive from filing
+  # Bottom line is NOT annualized x4/3: MWC has a seasonally soft Q4 (year-end provisions,
+  # forex, tax true-ups below EBIT), so FY net income ≈ 9M actual, not 9M x 4/3. Revenue/EBIT
+  # DO annualize x4/3. This keeps 2024E net income/EPS realistic vs the full-year run-rate.
+  fy_net_income_factor: 1.05         # FY2024E parent NI = 9M-2024 parent NI x this
+  preferred_dividend_annual: 1600000 # ₱000/yr preferred dividends, deducted for EPS (common basis)
   # CapEx fades from the current investment peak toward a normalized rate-base level.
   capex_pct_revenue_terminal: 0.30   # terminal capex/revenue (still high: ongoing rate-base growth)
   nwc_change_pct_revenue: 0.01

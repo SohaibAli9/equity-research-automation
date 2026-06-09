@@ -12,7 +12,7 @@ as_of_date: "2024-11-14"            # filing date; note is framed from this vant
 # period-appropriate market reference for the Q3-2024 note. Source: BusinessWorld /
 # Bilyonaryo, May 2024. Analyst should refresh to a live PSE quote in production.
 price: 22.36                        # PHP/share, as-of reference
-week52_low: 16.50                   # approx 2024 range (sourced reference)
+week52_low: 16.50                   # approx 2024 range (ESTIMATED — refresh from PSE in production)
 week52_high: 27.00
 
 # --- stable / slow-moving ---
