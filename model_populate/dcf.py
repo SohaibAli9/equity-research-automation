@@ -59,6 +59,9 @@ def compute() -> dict:
     capex_pct0 = capex0 / revenue0
     capex_pct_term = fd["capex_pct_revenue_terminal"]
     tax = v["tax_rate"]
+    ni0 = inc.get("net_income_parent", P9) * ANNUALIZE          # base parent net income
+    net_margin = ni0 / revenue0
+    shares = filing.cover.common_shares_outstanding
 
     # ── WACC (CAPM + country risk premium; observed beta) ─────────────────
     ke = v["risk_free_rate"] + v["beta"] * v["mature_market_erp"] + v["country_risk_premium"]
@@ -77,11 +80,13 @@ def compute() -> dict:
         rev[y] = rev[y - 1] * (1 + g)
 
     proj = {k: {} for k in ("revenue", "ebit", "nopat", "da", "capex", "dnwc", "fcf",
-                            "capex_pct", "discount_factor", "pv_fcf")}
+                            "capex_pct", "discount_factor", "pv_fcf", "net_income", "eps")}
     for y in years:
         proj["revenue"][y] = rev[y]
         proj["ebit"][y] = rev[y] * ebit_margin
         proj["nopat"][y] = proj["ebit"][y] * (1 - tax)
+        proj["net_income"][y] = ni0 if y == v["base_year"] else rev[y] * net_margin
+        proj["eps"][y] = proj["net_income"][y] * 1000 / shares
         proj["da"][y] = rev[y] * da_pct
         # capex fades linearly from current peak (base year) to terminal level
         if y == v["base_year"]:

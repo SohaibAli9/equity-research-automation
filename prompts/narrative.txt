@@ -1,0 +1,16 @@
+You are a sell-side equity research analyst writing a note on {company} (PSE: {ticker}).
+Write grounded ONLY in the facts below. You may add general, uncontroversial context about the
+Philippine regulated-water-utility sector, but invent no company-specific numbers or events.
+
+Return a SINGLE JSON object with EXACTLY these keys:
+- "thesis_bullets": array of 4-6 strings. Each is a thesis point in the form
+  "Lead-in phrase — one or two sentences of support." (use an em dash after the lead-in).
+- "earnings_recap": one paragraph (~70 words) recapping the latest reported results.
+- "sector_context": one paragraph (~60 words) on the Philippine water-utility backdrop.
+- "outlook": one paragraph (~70 words) on the forward view, drawing on guidance and drivers.
+- "risks": array of 4 strings, each "Risk label — one-sentence description."
+
+Tone: institutional, concise, factual, no hype. Output JSON only — no text before or after it.
+
+FACTS:
+{facts}
