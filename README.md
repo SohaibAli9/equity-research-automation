@@ -16,6 +16,9 @@ layer so the analyst's time goes to judgment.
 
 > **Status:** demonstration build. Driven end-to-end on one real filing — Manila Water Company,
 > Inc. (`MWC`) SEC Form 17-Q for the quarter ended September 30, 2024.
+>
+> **Pre-generated outputs are in [`examples/`](examples/)** — the live Excel model, the Word note,
+> the extracted JSON, and PDF previews of both — so you can review them without running anything.
 
 ---
 
@@ -78,9 +81,26 @@ Each stage reads and writes typed JSON, so stages are independently runnable and
 uv sync                                  # install pinned dependencies
 cp .env.example .env                     # add ANTHROPIC_API_KEY and GEMINI_API_KEY
 uv run python pipeline/run_all.py        # one filing in → JSON + Excel + Word out
+
+uv run python pipeline/run_all.py --from 4          # re-run model + report only
+uv run python pipeline/run_all.py --only 1          # just extraction
+uv run python pipeline/run_all.py --skip-enrichment # spine only (no news/commentary)
 ```
 
-Outputs are written to `output/`.
+The Excel recalc cross-check requires LibreOffice (`soffice` on PATH).
+
+### Outputs (`output/<filing>/`)
+
+| File | What |
+|---|---|
+| `financials.json` | extracted statements + segments + cover, with provenance |
+| `validation.json` | internal-consistency check results |
+| `model_values.json` | the DCF valuation (the report's source of truth) |
+| `mwc_model.xlsx` | the live, formula-driven DCF model (7 tabs) |
+| `mwc_research_note.docx` | the sell-side research note (5 pages) |
+
+On the demonstration filing the pipeline produces a **BUY**, fair value **₱27.35**
+(+22% vs the as-of price), with the live Excel model reconciling to the note to the cent.
 
 ---
 

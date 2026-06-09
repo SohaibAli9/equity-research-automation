@@ -1,0 +1,1803 @@
+{
+  "company": "Manila Water Company, Inc.",
+  "ticker": "MWC",
+  "filing_type": "17-Q",
+  "period_end": "2024-09-30",
+  "currency": "PHP",
+  "units": "thousands",
+  "income": {
+    "name": "income",
+    "title": "Statements of Comprehensive Income",
+    "periods": [
+      "q3_2024",
+      "q3_2023",
+      "ytd9m_2024",
+      "ytd9m_2023"
+    ],
+    "line_items": [
+      {
+        "label": "Water and used water revenues",
+        "account": "revenue_water",
+        "values": {
+          "q3_2024": 8683338.0,
+          "q3_2023": 7331123.0,
+          "ytd9m_2024": 26045906.0,
+          "ytd9m_2023": 21311373.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other operating revenues",
+        "account": "revenue_other",
+        "values": {
+          "q3_2024": 465918.0,
+          "q3_2023": 346921.0,
+          "ytd9m_2024": 1363177.0,
+          "ytd9m_2023": 1619191.0
+        },
+        "note": null
+      },
+      {
+        "label": "FINANCE INCOME FROM CONTRACT ASSETS",
+        "account": "finance_income_contracts",
+        "values": {
+          "q3_2024": 43613.0,
+          "q3_2023": 74921.0,
+          "ytd9m_2024": 137983.0,
+          "ytd9m_2023": 213636.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": "revenue_total",
+        "values": {
+          "q3_2024": 9192869.0,
+          "q3_2023": 7752965.0,
+          "ytd9m_2024": 27547066.0,
+          "ytd9m_2023": 23144200.0
+        },
+        "note": null
+      },
+      {
+        "label": "Depreciation and amortization",
+        "account": "depreciation_amortization",
+        "values": {
+          "q3_2024": 1161973.0,
+          "q3_2023": 958371.0,
+          "ytd9m_2024": 3274208.0,
+          "ytd9m_2023": 2703583.0
+        },
+        "note": null
+      },
+      {
+        "label": "Power, light and water",
+        "account": null,
+        "values": {
+          "q3_2024": 606697.0,
+          "q3_2023": 583914.0,
+          "ytd9m_2024": 1819059.0,
+          "ytd9m_2023": 1791680.0
+        },
+        "note": null
+      },
+      {
+        "label": "Salaries, wages and employee benefits",
+        "account": null,
+        "values": {
+          "q3_2024": 348337.0,
+          "q3_2023": 386785.0,
+          "ytd9m_2024": 1026250.0,
+          "ytd9m_2023": 960288.0
+        },
+        "note": null
+      },
+      {
+        "label": "Water treatment chemicals",
+        "account": null,
+        "values": {
+          "q3_2024": 133918.0,
+          "q3_2023": 102356.0,
+          "ytd9m_2024": 302219.0,
+          "ytd9m_2023": 253980.0
+        },
+        "note": null
+      },
+      {
+        "label": "Regulatory costs",
+        "account": null,
+        "values": {
+          "q3_2024": 118692.0,
+          "q3_2023": 96825.0,
+          "ytd9m_2024": 360164.0,
+          "ytd9m_2023": 289858.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contractual services",
+        "account": null,
+        "values": {
+          "q3_2024": 116346.0,
+          "q3_2023": 130462.0,
+          "ytd9m_2024": 311571.0,
+          "ytd9m_2023": 519472.0
+        },
+        "note": null
+      },
+      {
+        "label": "Repairs and maintenance",
+        "account": null,
+        "values": {
+          "q3_2024": 100236.0,
+          "q3_2023": 110011.0,
+          "ytd9m_2024": 390275.0,
+          "ytd9m_2023": 339242.0
+        },
+        "note": null
+      },
+      {
+        "label": "Wastewater costs",
+        "account": null,
+        "values": {
+          "q3_2024": 55361.0,
+          "q3_2023": 43313.0,
+          "ytd9m_2024": 163281.0,
+          "ytd9m_2023": 162036.0
+        },
+        "note": null
+      },
+      {
+        "label": "Water tankering and bulk water",
+        "account": null,
+        "values": {
+          "q3_2024": -46609.0,
+          "q3_2023": 62913.0,
+          "ytd9m_2024": 150729.0,
+          "ytd9m_2023": 183378.0
+        },
+        "note": null
+      },
+      {
+        "label": "Collection fees",
+        "account": null,
+        "values": {
+          "q3_2024": 41425.0,
+          "q3_2023": 41796.0,
+          "ytd9m_2024": 121415.0,
+          "ytd9m_2023": 119022.0
+        },
+        "note": null
+      },
+      {
+        "label": "Amortization of water service connections",
+        "account": null,
+        "values": {
+          "q3_2024": 37265.0,
+          "q3_2023": 48999.0,
+          "ytd9m_2024": 132065.0,
+          "ytd9m_2023": 135767.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other expenses",
+        "account": null,
+        "values": {
+          "q3_2024": 106910.0,
+          "q3_2023": 68374.0,
+          "ytd9m_2024": 398691.0,
+          "ytd9m_2023": 199237.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": "cost_of_services",
+        "values": {
+          "q3_2024": 2780551.0,
+          "q3_2023": 2634119.0,
+          "ytd9m_2024": 8449927.0,
+          "ytd9m_2023": 7657543.0
+        },
+        "note": null
+      },
+      {
+        "label": "GROSS PROFIT",
+        "account": "gross_profit",
+        "values": {
+          "q3_2024": 6412318.0,
+          "q3_2023": 5118846.0,
+          "ytd9m_2024": 19097139.0,
+          "ytd9m_2023": 15486657.0
+        },
+        "note": null
+      },
+      {
+        "label": "OPERATING EXPENSES",
+        "account": "operating_expenses",
+        "values": {
+          "q3_2024": 1430382.0,
+          "q3_2023": 1267584.0,
+          "ytd9m_2024": 4032226.0,
+          "ytd9m_2023": 3933620.0
+        },
+        "note": null
+      },
+      {
+        "label": "INCOME BEFORE OTHER INCOME (EXPENSES)",
+        "account": "income_before_other",
+        "values": {
+          "q3_2024": 4981936.0,
+          "q3_2023": 3851262.0,
+          "ytd9m_2024": 15064913.0,
+          "ytd9m_2023": 11553037.0
+        },
+        "note": null
+      },
+      {
+        "label": "Revenue from rehabilitation works",
+        "account": null,
+        "values": {
+          "q3_2024": 6567710.0,
+          "q3_2023": 4572085.0,
+          "ytd9m_2024": 16237206.0,
+          "ytd9m_2023": 11493301.0
+        },
+        "note": null
+      },
+      {
+        "label": "Cost of rehabilitation works",
+        "account": null,
+        "values": {
+          "q3_2024": -6567710.0,
+          "q3_2023": -4572085.0,
+          "ytd9m_2024": -16237206.0,
+          "ytd9m_2023": -11493301.0
+        },
+        "note": null
+      },
+      {
+        "label": "Foreign exchange gains (losses) – net",
+        "account": "forex_net",
+        "values": {
+          "q3_2024": 1478636.0,
+          "q3_2023": -645894.0,
+          "ytd9m_2024": -590464.0,
+          "ytd9m_2023": -401449.0
+        },
+        "note": null
+      },
+      {
+        "label": "Foreign currency differentials",
+        "account": null,
+        "values": {
+          "q3_2024": -1452565.0,
+          "q3_2023": 640744.0,
+          "ytd9m_2024": 870537.0,
+          "ytd9m_2023": 397255.0
+        },
+        "note": null
+      },
+      {
+        "label": "Interest expense",
+        "account": "interest_expense",
+        "values": {
+          "q3_2024": -902882.0,
+          "q3_2023": -913565.0,
+          "ytd9m_2024": -2730796.0,
+          "ytd9m_2023": -2825693.0
+        },
+        "note": null
+      },
+      {
+        "label": "Interest income",
+        "account": "interest_income",
+        "values": {
+          "q3_2024": 104031.0,
+          "q3_2023": 79757.0,
+          "ytd9m_2024": 302165.0,
+          "ytd9m_2023": 235436.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity share in net income of associates",
+        "account": "equity_in_associates",
+        "values": {
+          "q3_2024": 79001.0,
+          "q3_2023": 113715.0,
+          "ytd9m_2024": 293909.0,
+          "ytd9m_2023": 408948.0
+        },
+        "note": null
+      },
+      {
+        "label": "Losses on disposal of property and equipment – net",
+        "account": null,
+        "values": {
+          "q3_2024": -253.0,
+          "q3_2023": -1541.0,
+          "ytd9m_2024": -83.0,
+          "ytd9m_2023": -10882.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other income (losses) - net",
+        "account": "other_income_net",
+        "values": {
+          "q3_2024": 68164.0,
+          "q3_2023": -1799.0,
+          "ytd9m_2024": 497563.0,
+          "ytd9m_2023": 346197.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": "other_income_net",
+        "values": {
+          "q3_2024": -625868.0,
+          "q3_2023": -728583.0,
+          "ytd9m_2024": -1357169.0,
+          "ytd9m_2023": -1850188.0
+        },
+        "note": null
+      },
+      {
+        "label": "INCOME BEFORE INCOME TAX FROM CONTINUING OPERATIONS",
+        "account": "income_before_tax",
+        "values": {
+          "q3_2024": 4356068.0,
+          "q3_2023": 3122679.0,
+          "ytd9m_2024": 13707744.0,
+          "ytd9m_2023": 9702849.0
+        },
+        "note": null
+      },
+      {
+        "label": "PROVISION FOR INCOME TAX - NET",
+        "account": "income_tax",
+        "values": {
+          "q3_2024": 1026274.0,
+          "q3_2023": 817676.0,
+          "ytd9m_2024": 3217354.0,
+          "ytd9m_2023": 2178219.0
+        },
+        "note": null
+      },
+      {
+        "label": "NET INCOME FROM CONTINUING OPERATIONS",
+        "account": "net_income_continuing",
+        "values": {
+          "q3_2024": 3329794.0,
+          "q3_2023": 2305003.0,
+          "ytd9m_2024": 10490390.0,
+          "ytd9m_2023": 7524630.0
+        },
+        "note": null
+      },
+      {
+        "label": "NET LOSS FROM DISCONTINUED OPERATIONS",
+        "account": "net_income_discontinued",
+        "values": {
+          "q3_2024": -856.0,
+          "q3_2023": -9.0,
+          "ytd9m_2024": -1319.0,
+          "ytd9m_2023": -724.0
+        },
+        "note": null
+      },
+      {
+        "label": "NET INCOME",
+        "account": "net_income_total",
+        "values": {
+          "q3_2024": 3328938.0,
+          "q3_2023": 2304994.0,
+          "ytd9m_2024": 10489071.0,
+          "ytd9m_2023": 7523906.0
+        },
+        "note": null
+      },
+      {
+        "label": "Cumulative translation adjustment",
+        "account": null,
+        "values": {
+          "q3_2024": 517375.0,
+          "q3_2023": 225749.0,
+          "ytd9m_2024": -99026.0,
+          "ytd9m_2023": 348164.0
+        },
+        "note": null
+      },
+      {
+        "label": "Gain (loss) on net investment hedge",
+        "account": null,
+        "values": {
+          "q3_2024": 254032.0,
+          "q3_2023": -135153.0,
+          "ytd9m_2024": -64831.0,
+          "ytd9m_2023": -80693.0
+        },
+        "note": null
+      },
+      {
+        "label": "Gain on cash flow hedge",
+        "account": null,
+        "values": {
+          "q3_2024": null,
+          "q3_2023": 666092.0,
+          "ytd9m_2024": null,
+          "ytd9m_2023": 507977.0
+        },
+        "note": null
+      },
+      {
+        "label": "Cost of hedging",
+        "account": null,
+        "values": {
+          "q3_2024": null,
+          "q3_2023": 127537.0,
+          "ytd9m_2024": null,
+          "ytd9m_2023": -325843.0
+        },
+        "note": null
+      },
+      {
+        "label": "Income tax effect",
+        "account": null,
+        "values": {
+          "q3_2024": -63508.0,
+          "q3_2023": -164620.0,
+          "ytd9m_2024": 16208.0,
+          "ytd9m_2023": -25361.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": null,
+        "values": {
+          "q3_2024": 707899.0,
+          "q3_2023": 719605.0,
+          "ytd9m_2024": -147649.0,
+          "ytd9m_2023": 424244.0
+        },
+        "note": null
+      },
+      {
+        "label": "Actuarial loss on pension liabilities",
+        "account": null,
+        "values": {
+          "q3_2024": null,
+          "q3_2023": null,
+          "ytd9m_2024": -48937.0,
+          "ytd9m_2023": -38717.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity share in other comprehensive income of an associate",
+        "account": null,
+        "values": {
+          "q3_2024": 330.0,
+          "q3_2023": null,
+          "ytd9m_2024": 4663.0,
+          "ytd9m_2023": null
+        },
+        "note": null
+      },
+      {
+        "label": "Income tax effect",
+        "account": null,
+        "values": {
+          "q3_2024": null,
+          "q3_2023": null,
+          "ytd9m_2024": 12234.0,
+          "ytd9m_2023": 9679.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": null,
+        "values": {
+          "q3_2024": 330.0,
+          "q3_2023": null,
+          "ytd9m_2024": -32040.0,
+          "ytd9m_2023": -29038.0
+        },
+        "note": null
+      },
+      {
+        "label": "TOTAL COMPREHENSIVE INCOME",
+        "account": null,
+        "values": {
+          "q3_2024": 4037167.0,
+          "q3_2023": 3024599.0,
+          "ytd9m_2024": 10309382.0,
+          "ytd9m_2023": 7919112.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity holders of Manila Water Company, Inc.",
+        "account": "net_income_parent",
+        "values": {
+          "q3_2024": 3188029.0,
+          "q3_2023": 2214267.0,
+          "ytd9m_2024": 10102596.0,
+          "ytd9m_2023": 7262138.0
+        },
+        "note": null
+      },
+      {
+        "label": "Noncontrolling interests",
+        "account": "nci",
+        "values": {
+          "q3_2024": 140909.0,
+          "q3_2023": 90727.0,
+          "ytd9m_2024": 386475.0,
+          "ytd9m_2023": 261768.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": "net_income_total",
+        "values": {
+          "q3_2024": 3328938.0,
+          "q3_2023": 2304994.0,
+          "ytd9m_2024": 10489071.0,
+          "ytd9m_2023": 7523906.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity holders of Manila Water Company, Inc.",
+        "account": null,
+        "values": {
+          "q3_2024": 3896258.0,
+          "q3_2023": 2933872.0,
+          "ytd9m_2024": 9922907.0,
+          "ytd9m_2023": 7657344.0
+        },
+        "note": null
+      },
+      {
+        "label": "Noncontrolling interests",
+        "account": "nci",
+        "values": {
+          "q3_2024": 140909.0,
+          "q3_2023": 90727.0,
+          "ytd9m_2024": 386475.0,
+          "ytd9m_2023": 261768.0
+        },
+        "note": null
+      },
+      {
+        "label": "",
+        "account": null,
+        "values": {
+          "q3_2024": 4037167.0,
+          "q3_2023": 3024599.0,
+          "ytd9m_2024": 10309382.0,
+          "ytd9m_2023": 7919112.0
+        },
+        "note": null
+      },
+      {
+        "label": "Basic",
+        "account": "eps_basic",
+        "values": {
+          "q3_2024": 1.08,
+          "q3_2023": 0.67,
+          "ytd9m_2024": 3.43,
+          "ytd9m_2023": 2.21
+        },
+        "note": null
+      },
+      {
+        "label": "Diluted",
+        "account": "eps_diluted",
+        "values": {
+          "q3_2024": 1.08,
+          "q3_2023": 0.67,
+          "ytd9m_2024": 3.43,
+          "ytd9m_2023": 2.21
+        },
+        "note": null
+      },
+      {
+        "label": "Basic",
+        "account": "eps_basic",
+        "values": {
+          "q3_2024": 1.08,
+          "q3_2023": 0.67,
+          "ytd9m_2024": 3.43,
+          "ytd9m_2023": 2.21
+        },
+        "note": null
+      },
+      {
+        "label": "Diluted",
+        "account": "eps_diluted",
+        "values": {
+          "q3_2024": 1.08,
+          "q3_2023": 0.67,
+          "ytd9m_2024": 3.43,
+          "ytd9m_2023": 2.21
+        },
+        "note": null
+      }
+    ],
+    "page": 5
+  },
+  "balance": {
+    "name": "balance",
+    "title": "Statements of Financial Position",
+    "periods": [
+      "fy_2024_09_30",
+      "fy_2023_12_31"
+    ],
+    "line_items": [
+      {
+        "label": "Cash and cash equivalents",
+        "account": "cash",
+        "values": {
+          "fy_2024_09_30": 8546480.0,
+          "fy_2023_12_31": 10752734.0
+        },
+        "note": null
+      },
+      {
+        "label": "Receivables",
+        "account": "receivables",
+        "values": {
+          "fy_2024_09_30": 3824969.0,
+          "fy_2023_12_31": 2904920.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contract assets - current portion",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 453682.0,
+          "fy_2023_12_31": 549873.0
+        },
+        "note": null
+      },
+      {
+        "label": "Inventories",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 425556.0,
+          "fy_2023_12_31": 380615.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other current assets",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1821906.0,
+          "fy_2023_12_31": 1534553.0
+        },
+        "note": null
+      },
+      {
+        "label": "Assets held for sale",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1126875.0,
+          "fy_2023_12_31": null
+        },
+        "note": null
+      },
+      {
+        "label": "Total Current Assets",
+        "account": "total_current_assets",
+        "values": {
+          "fy_2024_09_30": 16199468.0,
+          "fy_2023_12_31": 16122695.0
+        },
+        "note": null
+      },
+      {
+        "label": "Property, plant and equipment and software",
+        "account": "ppe",
+        "values": {
+          "fy_2024_09_30": 9227154.0,
+          "fy_2023_12_31": 9108755.0
+        },
+        "note": null
+      },
+      {
+        "label": "Service concession assets",
+        "account": "service_concession_assets",
+        "values": {
+          "fy_2024_09_30": 175933707.0,
+          "fy_2023_12_31": 162217499.0
+        },
+        "note": null
+      },
+      {
+        "label": "Right-of-use assets",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 520639.0,
+          "fy_2023_12_31": 328466.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contract assets - net of current portion",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1273664.0,
+          "fy_2023_12_31": 1168784.0
+        },
+        "note": null
+      },
+      {
+        "label": "Investments in associates",
+        "account": "investment_in_associates",
+        "values": {
+          "fy_2024_09_30": 11533675.0,
+          "fy_2023_12_31": 11191568.0
+        },
+        "note": null
+      },
+      {
+        "label": "Goodwill",
+        "account": "goodwill",
+        "values": {
+          "fy_2024_09_30": 300077.0,
+          "fy_2023_12_31": 6247.0
+        },
+        "note": null
+      },
+      {
+        "label": "Deferred tax assets - net",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 510704.0,
+          "fy_2023_12_31": 499689.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other noncurrent assets",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 8098406.0,
+          "fy_2023_12_31": 9043699.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total Noncurrent Assets",
+        "account": "total_noncurrent_assets",
+        "values": {
+          "fy_2024_09_30": 207398026.0,
+          "fy_2023_12_31": 193564707.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total Assets",
+        "account": "total_assets",
+        "values": {
+          "fy_2024_09_30": 223597494.0,
+          "fy_2023_12_31": 209687402.0
+        },
+        "note": null
+      },
+      {
+        "label": "Accounts and other payables",
+        "account": "accounts_payable",
+        "values": {
+          "fy_2024_09_30": 19253663.0,
+          "fy_2023_12_31": 18761073.0
+        },
+        "note": null
+      },
+      {
+        "label": "Short-term debt",
+        "account": "short_term_debt",
+        "values": {
+          "fy_2024_09_30": 8207205.0,
+          "fy_2023_12_31": 135000.0
+        },
+        "note": null
+      },
+      {
+        "label": "Long-term debt",
+        "account": "long_term_debt_current",
+        "values": {
+          "fy_2024_09_30": 8550900.0,
+          "fy_2023_12_31": 16971501.0
+        },
+        "note": null
+      },
+      {
+        "label": "Service concession obligations",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 534837.0,
+          "fy_2023_12_31": 910633.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contract liabilities",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 409069.0,
+          "fy_2023_12_31": 389571.0
+        },
+        "note": null
+      },
+      {
+        "label": "Lease liabilities",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 90927.0,
+          "fy_2023_12_31": 117030.0
+        },
+        "note": null
+      },
+      {
+        "label": "Income tax payable",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 824750.0,
+          "fy_2023_12_31": 339116.0
+        },
+        "note": null
+      },
+      {
+        "label": "Liabilities directly related to assets held for sale",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1130557.0,
+          "fy_2023_12_31": null
+        },
+        "note": null
+      },
+      {
+        "label": "Total Current Liabilities",
+        "account": "total_current_liabilities",
+        "values": {
+          "fy_2024_09_30": 39001908.0,
+          "fy_2023_12_31": 37623924.0
+        },
+        "note": null
+      },
+      {
+        "label": "Long-term debt",
+        "account": "long_term_debt",
+        "values": {
+          "fy_2024_09_30": 86302839.0,
+          "fy_2023_12_31": 82275950.0
+        },
+        "note": null
+      },
+      {
+        "label": "Service concession obligations",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 14703653.0,
+          "fy_2023_12_31": 15214188.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contract liabilities",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1177613.0,
+          "fy_2023_12_31": 921420.0
+        },
+        "note": null
+      },
+      {
+        "label": "Lease liabilities",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 326004.0,
+          "fy_2023_12_31": 215348.0
+        },
+        "note": null
+      },
+      {
+        "label": "Pension liabilities – net",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 526468.0,
+          "fy_2023_12_31": 388222.0
+        },
+        "note": null
+      },
+      {
+        "label": "Deferred tax liabilities – net",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 2384360.0,
+          "fy_2023_12_31": 1052305.0
+        },
+        "note": null
+      },
+      {
+        "label": "Provisions",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 454041.0,
+          "fy_2023_12_31": 402659.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other noncurrent liabilities",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1127244.0,
+          "fy_2023_12_31": 1473943.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total Noncurrent Liabilities",
+        "account": "total_noncurrent_liabilities",
+        "values": {
+          "fy_2024_09_30": 107002222.0,
+          "fy_2023_12_31": 101944035.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total Liabilities",
+        "account": "total_liabilities",
+        "values": {
+          "fy_2024_09_30": 146004130.0,
+          "fy_2023_12_31": 139567959.0
+        },
+        "note": null
+      },
+      {
+        "label": "Common stock",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 2885796.0,
+          "fy_2023_12_31": 2884840.0
+        },
+        "note": null
+      },
+      {
+        "label": "Preferred stock",
+        "account": "preferred_stock",
+        "values": {
+          "fy_2024_09_30": 400000.0,
+          "fy_2023_12_31": 400000.0
+        },
+        "note": null
+      },
+      {
+        "label": "Capital stock",
+        "account": "capital_stock",
+        "values": {
+          "fy_2024_09_30": 3285796.0,
+          "fy_2023_12_31": 3284840.0
+        },
+        "note": null
+      },
+      {
+        "label": "Additional paid-in capital",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 14501669.0,
+          "fy_2023_12_31": 14458016.0
+        },
+        "note": null
+      },
+      {
+        "label": "Common stock",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": -4949053.0,
+          "fy_2023_12_31": -4996646.0
+        },
+        "note": null
+      },
+      {
+        "label": "Preferred stock",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": -752978.0,
+          "fy_2023_12_31": -752978.0
+        },
+        "note": null
+      },
+      {
+        "label": "Subscriptions receivable",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": -5604332.0,
+          "fy_2023_12_31": -5607258.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total paid-up capital",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 6481102.0,
+          "fy_2023_12_31": 6385974.0
+        },
+        "note": null
+      },
+      {
+        "label": "Appropriated",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 56500000.0,
+          "fy_2023_12_31": 56500000.0
+        },
+        "note": null
+      },
+      {
+        "label": "Unappropriated",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 12450255.0,
+          "fy_2023_12_31": 5717749.0
+        },
+        "note": null
+      },
+      {
+        "label": "Cumulative translation adjustment",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 594262.0,
+          "fy_2023_12_31": 741911.0
+        },
+        "note": null
+      },
+      {
+        "label": "Remeasurement loss on defined benefit plans",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": -268520.0,
+          "fy_2023_12_31": -231817.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity in other comprehensive loss of an associate",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 7397.0,
+          "fy_2023_12_31": 2734.0
+        },
+        "note": null
+      },
+      {
+        "label": "Hedging reserves",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": null,
+          "fy_2023_12_31": -64919.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other equity reserves",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": -144458.0,
+          "fy_2023_12_31": -144458.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity attributable to equity holders of Manila Water Company, Inc.",
+        "account": "equity_attributable_parent",
+        "values": {
+          "fy_2024_09_30": 75620038.0,
+          "fy_2023_12_31": 68907174.0
+        },
+        "note": null
+      },
+      {
+        "label": "Noncontrolling interests",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 1973326.0,
+          "fy_2023_12_31": 1212269.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total Equity",
+        "account": "total_equity",
+        "values": {
+          "fy_2024_09_30": 77593364.0,
+          "fy_2023_12_31": 70119443.0
+        },
+        "note": null
+      },
+      {
+        "label": "Total Liabilities and Equity",
+        "account": null,
+        "values": {
+          "fy_2024_09_30": 223597494.0,
+          "fy_2023_12_31": 209687402.0
+        },
+        "note": null
+      }
+    ],
+    "page": 3
+  },
+  "cashflow": {
+    "name": "cashflow",
+    "title": "Statements of Cash Flows",
+    "periods": [
+      "ytd9m_2024",
+      "ytd9m_2023"
+    ],
+    "line_items": [
+      {
+        "label": "Income before income tax from continuing operations",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 13707744.0,
+          "ytd9m_2023": 9702849.0
+        },
+        "note": null
+      },
+      {
+        "label": "Loss before income tax from discontinued operations",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -1309.0,
+          "ytd9m_2023": -511.0
+        },
+        "note": null
+      },
+      {
+        "label": "Income before income tax",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 13706435.0,
+          "ytd9m_2023": 9702338.0
+        },
+        "note": null
+      },
+      {
+        "label": "Depreciation and amortization",
+        "account": "depreciation_amortization",
+        "values": {
+          "ytd9m_2024": 3732766.0,
+          "ytd9m_2023": 3201417.0
+        },
+        "note": null
+      },
+      {
+        "label": "Interest expense",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 2730796.0,
+          "ytd9m_2023": 2825693.0
+        },
+        "note": null
+      },
+      {
+        "label": "Interest income",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -302165.0,
+          "ytd9m_2023": -235436.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity share in net income of associates",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -293909.0,
+          "ytd9m_2023": -408948.0
+        },
+        "note": null
+      },
+      {
+        "label": "Pension expense, net of contributions and benefit payments",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 77196.0,
+          "ytd9m_2023": 80537.0
+        },
+        "note": null
+      },
+      {
+        "label": "Share-based payments",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 95128.0,
+          "ytd9m_2023": 42739.0
+        },
+        "note": null
+      },
+      {
+        "label": "Provisions for probable losses and impairment losses",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 56250.0,
+          "ytd9m_2023": 50252.0
+        },
+        "note": null
+      },
+      {
+        "label": "Unrealized foreign exchange losses (gains)",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 2295.0,
+          "ytd9m_2023": -346038.0
+        },
+        "note": null
+      },
+      {
+        "label": "Losses on disposal of property and equipment - net",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 83.0,
+          "ytd9m_2023": 10882.0
+        },
+        "note": null
+      },
+      {
+        "label": "Operating income before changes in operating assets and liabilities",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 19804875.0,
+          "ytd9m_2023": 14923436.0
+        },
+        "note": null
+      },
+      {
+        "label": "Receivables",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -926552.0,
+          "ytd9m_2023": -465632.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contract assets",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -8690.0,
+          "ytd9m_2023": 122468.0
+        },
+        "note": null
+      },
+      {
+        "label": "Inventories",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -65163.0,
+          "ytd9m_2023": 25753.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other current assets",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -432579.0,
+          "ytd9m_2023": -116436.0
+        },
+        "note": null
+      },
+      {
+        "label": "Service concession assets",
+        "account": "capex",
+        "values": {
+          "ytd9m_2024": -16900644.0,
+          "ytd9m_2023": -8098229.0
+        },
+        "note": null
+      },
+      {
+        "label": "Accounts and other payables",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 2484250.0,
+          "ytd9m_2023": 65422.0
+        },
+        "note": null
+      },
+      {
+        "label": "Contract liabilities",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 298893.0,
+          "ytd9m_2023": 232882.0
+        },
+        "note": null
+      },
+      {
+        "label": "Cash generated from operations",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 4254390.0,
+          "ytd9m_2023": 6689664.0
+        },
+        "note": null
+      },
+      {
+        "label": "Income taxes paid",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -1272228.0,
+          "ytd9m_2023": -1235160.0
+        },
+        "note": null
+      },
+      {
+        "label": "Net cash provided by operating activities",
+        "account": "cfo",
+        "values": {
+          "ytd9m_2024": 2982162.0,
+          "ytd9m_2023": 5454504.0
+        },
+        "note": null
+      },
+      {
+        "label": "Property and equipment and software",
+        "account": "capex",
+        "values": {
+          "ytd9m_2024": -732129.0,
+          "ytd9m_2023": -1618173.0
+        },
+        "note": null
+      },
+      {
+        "label": "Short-term investments",
+        "account": null,
+        "values": {
+          "ytd9m_2024": null,
+          "ytd9m_2023": -5000.0
+        },
+        "note": null
+      },
+      {
+        "label": "Interest received",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 304932.0,
+          "ytd9m_2023": 229832.0
+        },
+        "note": null
+      },
+      {
+        "label": "Dividends received",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 207788.0,
+          "ytd9m_2023": 186599.0
+        },
+        "note": null
+      },
+      {
+        "label": "Sale of property and equipment",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 133.0,
+          "ytd9m_2023": 3160.0
+        },
+        "note": null
+      },
+      {
+        "label": "Maturity of short-term investments",
+        "account": null,
+        "values": {
+          "ytd9m_2024": null,
+          "ytd9m_2023": 133418.0
+        },
+        "note": null
+      },
+      {
+        "label": "Decrease in other noncurrent assets",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 833002.0,
+          "ytd9m_2023": 141522.0
+        },
+        "note": null
+      },
+      {
+        "label": "Net cash provided (used) in investing activities",
+        "account": "cfi",
+        "values": {
+          "ytd9m_2024": 613726.0,
+          "ytd9m_2023": -928642.0
+        },
+        "note": null
+      },
+      {
+        "label": "Short-term debt (Note 10)",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 8881893.0,
+          "ytd9m_2023": 210000.0
+        },
+        "note": null
+      },
+      {
+        "label": "Long-term debt (Note 10)",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 7456002.0,
+          "ytd9m_2023": 4724898.0
+        },
+        "note": null
+      },
+      {
+        "label": "Long-term debt (Note 10)",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -12330379.0,
+          "ytd9m_2023": -3283472.0
+        },
+        "note": null
+      },
+      {
+        "label": "Interest",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -4442712.0,
+          "ytd9m_2023": -2072972.0
+        },
+        "note": null
+      },
+      {
+        "label": "Dividends to equity holders of the Parent Company",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -3370090.0,
+          "ytd9m_2023": -3802901.0
+        },
+        "note": null
+      },
+      {
+        "label": "Service concession obligations",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -1073267.0,
+          "ytd9m_2023": -1016739.0
+        },
+        "note": null
+      },
+      {
+        "label": "Principal portion of lease liabilities",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -202192.0,
+          "ytd9m_2023": -105197.0
+        },
+        "note": null
+      },
+      {
+        "label": "Short-term debt (Note 10)",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -822000.0,
+          "ytd9m_2023": -252872.0
+        },
+        "note": null
+      },
+      {
+        "label": "Dividends to noncontrolling interests",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -128248.0,
+          "ytd9m_2023": -35246.0
+        },
+        "note": null
+      },
+      {
+        "label": "Movements in NCI",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 502830.0,
+          "ytd9m_2023": null
+        },
+        "note": null
+      },
+      {
+        "label": "Collection of subscription receivable",
+        "account": null,
+        "values": {
+          "ytd9m_2024": null,
+          "ytd9m_2023": 15564.0
+        },
+        "note": null
+      },
+      {
+        "label": "Decrease in other noncurrent liabilities",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -212872.0,
+          "ytd9m_2023": -261828.0
+        },
+        "note": null
+      },
+      {
+        "label": "Net cash used in financing activities",
+        "account": "cff",
+        "values": {
+          "ytd9m_2024": -5741035.0,
+          "ytd9m_2023": -5880765.0
+        },
+        "note": null
+      },
+      {
+        "label": "NET DECREASE IN CASH AND CASH EQUIVALENTS",
+        "account": "net_change_cash",
+        "values": {
+          "ytd9m_2024": -2145147.0,
+          "ytd9m_2023": -1354903.0
+        },
+        "note": null
+      },
+      {
+        "label": "UNREALIZED FOREIGN EXCHANGE GAIN (LOSS) ON CASH AND CASH EQUIVALENTS",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -1425.0,
+          "ytd9m_2023": 7666.0
+        },
+        "note": null
+      },
+      {
+        "label": "CASH AND CASH EQUIVALENTS AT BEGINNING OF PERIOD",
+        "account": "cash_beginning",
+        "values": {
+          "ytd9m_2024": 10752734.0,
+          "ytd9m_2023": 8811939.0
+        },
+        "note": null
+      },
+      {
+        "label": "CASH AND CASH EQUIVALENTS BEFORE ASSETS HELD FOR SALE",
+        "account": null,
+        "values": {
+          "ytd9m_2024": 8606162.0,
+          "ytd9m_2023": 7464702.0
+        },
+        "note": null
+      },
+      {
+        "label": "CASH AND CASH EQUIVALENTS RELATED TO ASSETS HELD FOR SALE (Note 4)",
+        "account": null,
+        "values": {
+          "ytd9m_2024": -59682.0,
+          "ytd9m_2023": null
+        },
+        "note": null
+      },
+      {
+        "label": "CASH AND CASH EQUIVALENTS AT END OF PERIOD* (Note 6)",
+        "account": "cash_ending",
+        "values": {
+          "ytd9m_2024": 8546480.0,
+          "ytd9m_2023": 7464702.0
+        },
+        "note": null
+      }
+    ],
+    "page": 8
+  },
+  "segments": {
+    "period": "ytd9m_2024",
+    "segments": [
+      "manila_concession",
+      "domestic_subsidiaries",
+      "foreign_subsidiaries",
+      "consolidation_adjustments",
+      "consolidated"
+    ],
+    "rows": [
+      {
+        "label": "Sales to external customers",
+        "account": "revenue_external",
+        "values": {
+          "manila_concession": 21774720.0,
+          "domestic_subsidiaries": 7470249.0,
+          "foreign_subsidiaries": 3384.0,
+          "consolidation_adjustments": -1839270.0,
+          "consolidated": 27409083.0
+        },
+        "note": null
+      },
+      {
+        "label": "Finance income from contract assets",
+        "account": "finance_income_contract_assets",
+        "values": {
+          "manila_concession": null,
+          "domestic_subsidiaries": 137983.0,
+          "foreign_subsidiaries": null,
+          "consolidation_adjustments": null,
+          "consolidated": 137983.0
+        },
+        "note": null
+      },
+      {
+        "label": "Costs and expenses (excluding depreciation and amortization)",
+        "account": "costs_and_expenses_excluding_depreciation_amortization",
+        "values": {
+          "manila_concession": 6091672.0,
+          "domestic_subsidiaries": 4245541.0,
+          "foreign_subsidiaries": 56636.0,
+          "consolidation_adjustments": -1644463.0,
+          "consolidated": 8749386.0
+        },
+        "note": null
+      },
+      {
+        "label": "Depreciation and amortization",
+        "account": "depreciation_and_amortization",
+        "values": {
+          "manila_concession": 3038254.0,
+          "domestic_subsidiaries": 720631.0,
+          "foreign_subsidiaries": 958.0,
+          "consolidation_adjustments": -27077.0,
+          "consolidated": 3732766.0
+        },
+        "note": null
+      },
+      {
+        "label": "Equity share in net income of associates",
+        "account": "equity_share_net_income_associates",
+        "values": {
+          "manila_concession": null,
+          "domestic_subsidiaries": null,
+          "foreign_subsidiaries": 293909.0,
+          "consolidation_adjustments": null,
+          "consolidated": 293909.0
+        },
+        "note": null
+      },
+      {
+        "label": "Other income (expenses) - net",
+        "account": "other_income_expenses_net",
+        "values": {
+          "manila_concession": -533970.0,
+          "domestic_subsidiaries": -471283.0,
+          "foreign_subsidiaries": 3569.0,
+          "consolidation_adjustments": -649395.0,
+          "consolidated": -1651079.0
+        },
+        "note": null
+      },
+      {
+        "label": "Income (loss) before income tax",
+        "account": "income_loss_before_income_tax",
+        "values": {
+          "manila_concession": 12110824.0,
+          "domestic_subsidiaries": 2170777.0,
+          "foreign_subsidiaries": 243268.0,
+          "consolidation_adjustments": -817125.0,
+          "consolidated": 13707744.0
+        },
+        "note": null
+      },
+      {
+        "label": "Provision for income tax",
+        "account": "provision_for_income_tax",
+        "values": {
+          "manila_concession": 2785490.0,
+          "domestic_subsidiaries": 415151.0,
+          "foreign_subsidiaries": 506.0,
+          "consolidation_adjustments": 16207.0,
+          "consolidated": 3217354.0
+        },
+        "note": null
+      },
+      {
+        "label": "Net income (loss) from continuing operations",
+        "account": "net_income_loss_continuing_operations",
+        "values": {
+          "manila_concession": 9325334.0,
+          "domestic_subsidiaries": 1755626.0,
+          "foreign_subsidiaries": 242762.0,
+          "consolidation_adjustments": -833332.0,
+          "consolidated": 10490390.0
+        },
+        "note": null
+      },
+      {
+        "label": "Net loss from discontinued operations",
+        "account": "net_loss_discontinued_operations",
+        "values": {
+          "manila_concession": null,
+          "domestic_subsidiaries": -1319.0,
+          "foreign_subsidiaries": null,
+          "consolidation_adjustments": null,
+          "consolidated": -1319.0
+        },
+        "note": null
+      },
+      {
+        "label": "Net income (loss)",
+        "account": "net_income_loss",
+        "values": {
+          "manila_concession": 9325334.0,
+          "domestic_subsidiaries": 1754307.0,
+          "foreign_subsidiaries": 242762.0,
+          "consolidation_adjustments": -833332.0,
+          "consolidated": 10489071.0
+        },
+        "note": null
+      },
+      {
+        "label": "Segment assets excluding investment in associates",
+        "account": "segment_assets_excluding_investment_in_associates",
+        "values": {
+          "manila_concession": 186715025.0,
+          "domestic_subsidiaries": 45888061.0,
+          "foreign_subsidiaries": 14852941.0,
+          "consolidation_adjustments": -35392208.0,
+          "consolidated": 212063819.0
+        },
+        "note": null
+      },
+      {
+        "label": "Investment in associates",
+        "account": "investment_in_associates",
+        "values": {
+          "manila_concession": null,
+          "domestic_subsidiaries": null,
+          "foreign_subsidiaries": 10761891.0,
+          "consolidation_adjustments": 771784.0,
+          "consolidated": 11533675.0
+        },
+        "note": null
+      },
+      {
+        "label": "Segment liabilities",
+        "account": "segment_liabilities",
+        "values": {
+          "manila_concession": 113004376.0,
+          "domestic_subsidiaries": 29384270.0,
+          "foreign_subsidiaries": 12935986.0,
+          "consolidation_adjustments": -9320502.0,
+          "consolidated": 146004130.0
+        },
+        "note": null
+      }
+    ],
+    "page": 22
+  },
+  "cover": {
+    "common_shares_outstanding": 2597094010.0,
+    "preferred_shares_outstanding": 3563756068.0,
+    "debt_outstanding": 103060000.0,
+    "treasury_shares": null
+  },
+  "mdna_text": null,
+  "provenance": {
+    "source": "filing",
+    "document": "mwc_17q_q3_2024.pdf",
+    "extracted_with": "gemini-2.5-flash",
+    "pages": {
+      "income": 5,
+      "balance": 3,
+      "cashflow": 8,
+      "segments": 22
+    }
+  }
+}

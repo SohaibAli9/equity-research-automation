@@ -1,0 +1,87 @@
+{
+  "checks": [
+    {
+      "name": "balance_sheet_balances",
+      "passed": true,
+      "expected": 223597494.0,
+      "actual": 223597494.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "total assets = total liabilities + total equity"
+    },
+    {
+      "name": "asset_subtotals_sum",
+      "passed": true,
+      "expected": 223597494.0,
+      "actual": 223597494.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "current + noncurrent = total assets"
+    },
+    {
+      "name": "net_income_parent_plus_nci",
+      "passed": true,
+      "expected": 10489071.0,
+      "actual": 10489071.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "parent-attributable + NCI = total net income"
+    },
+    {
+      "name": "segment_net_income_ties_income",
+      "passed": true,
+      "expected": 10489071.0,
+      "actual": 10489071.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "Note 15 consolidated net income = income statement net income"
+    },
+    {
+      "name": "segment_liabilities_ties_balance",
+      "passed": true,
+      "expected": 146004130.0,
+      "actual": 146004130.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "Note 15 consolidated segment liabilities = balance sheet total liabilities"
+    },
+    {
+      "name": "cashflow_cash_ties_balance",
+      "passed": true,
+      "expected": 8546480.0,
+      "actual": 8546480.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "cash flow ending cash = balance sheet cash"
+    },
+    {
+      "name": "debt_reconciles_cover",
+      "passed": true,
+      "expected": 103060000.0,
+      "actual": 103060944.0,
+      "delta": 944.0,
+      "tolerance": 0.005,
+      "severity": "hard",
+      "detail": "sum of BS debt lines = cover-sheet debt outstanding"
+    },
+    {
+      "name": "revenue_components_sum",
+      "passed": true,
+      "expected": 27547066.0,
+      "actual": 27547066.0,
+      "delta": 0.0,
+      "tolerance": 0.005,
+      "severity": "soft",
+      "detail": "water + other + finance income = total revenue"
+    }
+  ],
+  "hard_fail": false,
+  "n_passed": 8,
+  "n_total": 8
+}
