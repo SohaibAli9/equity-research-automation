@@ -1,0 +1,18 @@
+You are an equity research analyst. Below is the Management's Discussion & Analysis (MD&A)
+from {company}'s {filing_type} for the period ended {period_end}.
+
+Extract, grounded ONLY in this text:
+- guidance: forward-looking statements, outlook, plans, or targets management gives (list of
+  short phrases; empty list if none stated)
+- key_drivers: the main drivers management cites for the period's results — revenue, billed
+  volume, tariff adjustments, costs, financing, etc. (short phrases)
+- tone: one short phrase characterizing management's tone (e.g. "confident", "cautiously
+  optimistic", "measured")
+- quotes: up to 3 short verbatim quotes (each under 30 words) that capture management's view
+
+Rules:
+- Use only what the text supports. Do not infer, speculate, or add outside knowledge.
+- If something is not present, leave that list empty.
+
+MD&A text:
+{mdna_text}

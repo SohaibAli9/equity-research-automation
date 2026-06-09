@@ -54,7 +54,7 @@ STATEMENT_PAGES = {
     "cashflow": [8],         # cash flows (p9 starts Notes)
     "segments": [22, 23, 24],  # Note 15 segment table
 }
-MDNA_PAGES = list(range(33, 50))  # Management Discussion & Analysis (for commentary)
+MDNA_PAGES = list(range(34, 49))  # Management Discussion & Analysis narrative (for commentary)
 
 # Period keys used across the income statement (4 columns) / BS (2) / CF (2).
 INCOME_PERIODS = ["q3_2024", "q3_2023", "ytd9m_2024", "ytd9m_2023"]
