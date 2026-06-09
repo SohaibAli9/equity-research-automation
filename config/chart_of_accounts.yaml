@@ -1,0 +1,61 @@
+# Standard chart of accounts. Extraction maps each filing line label to a canonical
+# `account` key where it matches; unmatched lines are still captured (account: null).
+# Aliases guide the LLM mapping and are case/spacing-insensitive hints.
+
+income:
+  revenue_water:            [water and used water revenues, water revenue]
+  revenue_other:            [other operating revenues]
+  finance_income_contracts: [finance income from contract assets]
+  revenue_total:            [total revenue, revenues]               # subtotal
+  cost_of_services:         [costs of services]                     # subtotal
+  depreciation_amortization: [depreciation and amortization]
+  gross_profit:             [gross profit]
+  operating_expenses:       [operating expenses]
+  income_before_other:      [income before other income, income before other income (expenses)]
+  interest_expense:         [interest expense]
+  interest_income:          [interest income]
+  forex_net:                [foreign exchange gains (losses), foreign exchange gains (losses) - net]
+  equity_in_associates:     [equity share in net income of associates]
+  other_income_net:         [other income (losses) - net, other income (expenses)]
+  income_before_tax:        [income before income tax, income before income tax from continuing operations]
+  income_tax:               [provision for income tax, provision for income tax - net]
+  net_income_continuing:    [net income from continuing operations]
+  net_income_discontinued:  [income (loss) from discontinued operations, net loss from discontinued operations]
+  net_income_total:         [net income]                            # bottom line
+  net_income_parent:        [equity holders of manila water company, net income attributable to equity holders]
+  nci:                      [noncontrolling interests, non-controlling interests]
+  eps_basic:                [basic]
+  eps_diluted:              [diluted]
+
+balance:
+  cash:                     [cash and cash equivalents]
+  receivables:              [receivables]
+  total_current_assets:     [total current assets]
+  ppe:                      [property, plant and equipment, property and equipment and software]
+  service_concession_assets: [service concession assets, concession]
+  investment_in_associates: [investments in associates, investment in associates]
+  goodwill:                 [goodwill]
+  total_noncurrent_assets:  [total noncurrent assets]
+  total_assets:             [total assets]
+  short_term_debt:          [short-term debt]
+  accounts_payable:         [accounts and other payables, trade and other payables]
+  long_term_debt_current:   [current portion of long-term debt, long-term debt]   # within current liabilities
+  total_current_liabilities: [total current liabilities]
+  long_term_debt:           [long-term debt]                        # noncurrent
+  total_noncurrent_liabilities: [total noncurrent liabilities]
+  total_liabilities:        [total liabilities]
+  capital_stock:            [capital stock]
+  preferred_stock:          [preferred stock]
+  retained_earnings:        [retained earnings]
+  equity_attributable_parent: [equity attributable to equity holders, total equity attributable to owners]
+  total_equity:             [total equity]
+
+cashflow:
+  cfo:                      [net cash from operating activities, net cash provided by operating activities]
+  depreciation_amortization: [depreciation and amortization]
+  capex:                    [additions to property, acquisitions of property and equipment, capital expenditures, additions to service concession]
+  cfi:                      [net cash used in investing activities]
+  cff:                      [net cash from financing activities, net cash used in financing activities]
+  net_change_cash:          [net increase (decrease) in cash, net increase in cash and cash equivalents]
+  cash_beginning:           [cash and cash equivalents at beginning]
+  cash_ending:              [cash and cash equivalents at end]

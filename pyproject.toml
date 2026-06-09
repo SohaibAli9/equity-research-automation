@@ -5,5 +5,17 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=0.107.1",
+    "docxtpl>=0.20.2",
+    "feedparser>=6.0.12",
+    "google-genai>=2.8.0",
+    "matplotlib>=3.10.9",
+    "openpyxl>=3.1.5",
+    "pydantic>=2.13.4",
     "pymupdf>=1.27.2.3",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
 ]

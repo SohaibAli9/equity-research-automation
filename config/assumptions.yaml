@@ -1,0 +1,33 @@
+# DCF assumptions — the configurable cells. Pegged to the filing date (~Nov 2024).
+# Analyst-tunable; these are defensible seed defaults, not house views.
+# Provenance: assumption.
+
+valuation:
+  as_of_date: "2024-11-14"          # filing signature date
+  forecast_start_year: 2025
+  explicit_forecast_years: 5         # model discounts 2025-2029...
+  note_table_years: [2024, 2025, 2026, 2027]   # ...note summary displays 2024A-2027F
+
+  # Discount rate (WACC) inputs — CAPM cost of equity + after-tax cost of debt
+  risk_free_rate: 0.060              # PH 10Y govt bond, late 2024
+  equity_risk_premium: 0.070         # Damodaran PH total ERP (mature + country risk)
+  beta: 0.46                         # observed (utility < 1)
+  pretax_cost_of_debt: 0.057         # PH utility credit; cross-checked vs filing interest/debt
+  tax_rate: 0.25                     # CREATE Act corporate rate
+
+  terminal_growth: 0.030             # ~BSP long-run inflation mid-target
+
+# Forecast drivers (fade). Margins/ratios are anchored to extracted actuals in dcf.py;
+# these knobs scale them. Revenue growth fades toward terminal growth.
+forecast_drivers:
+  revenue_growth:
+    2025: 0.10
+    2026: 0.08
+    2027: 0.07
+    2028: 0.06
+    2029: 0.05
+  # The following default to the trailing actuals if left null (computed in dcf.py).
+  ebit_margin: null                  # operating margin; null → derive from filing
+  da_pct_revenue: null
+  capex_pct_revenue: null
+  nwc_change_pct_revenue: 0.01

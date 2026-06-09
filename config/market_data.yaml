@@ -1,0 +1,30 @@
+# Market data for the research note. Provenance: market (NOT from the filing).
+# Pegged to the as-of date for temporal coherence with the Q3-2024 filing.
+# The Nov-2024 price snapshot is sourced/confirmed in the valuation stage.
+
+ticker: "MWC"
+bloomberg: "MWC PM"
+as_of_date: "2024-11-14"            # filing date; note is framed from this vantage
+
+# --- to confirm/snapshot as of the as_of date (sourced in model_populate) ---
+price: null                         # ₱/share, as of as_of_date
+week52_low: null
+week52_high: null
+
+# --- stable / slow-moving ---
+beta: 0.46
+# shares outstanding come from the filing cover (extraction), not here
+
+# --- dividend history (for the dividend-trend chart) ---
+dividends:                          # ₱/share per year; confirmed in model_populate
+  2021: null
+  2022: null
+  2023: null
+  2024: null
+
+# --- reference (latest known, for sanity only — not used in the note) ---
+reference_latest:
+  price: 39.50
+  date: "2026-06-01"
+  week52: [32.15, 45.30]
+  dividend_yield_2025: 0.044
