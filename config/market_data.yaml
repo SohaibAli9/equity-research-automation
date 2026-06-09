@@ -6,10 +6,14 @@ ticker: "MWC"
 bloomberg: "MWC PM"
 as_of_date: "2024-11-14"            # filing date; note is framed from this vantage
 
-# --- to confirm/snapshot as of the as_of date (sourced in model_populate) ---
-price: null                         # ₱/share, as of as_of_date
-week52_low: null
-week52_high: null
+# --- price snapshot as of the as_of date ---
+# ₱22.361 = the May-2024 Ayala->Trident common-share transaction / tender-offer reference
+# price. With Trident at ~82% voting and a thin public float, this is the best
+# period-appropriate market reference for the Q3-2024 note. Source: BusinessWorld /
+# Bilyonaryo, May 2024. Analyst should refresh to a live PSE quote in production.
+price: 22.36                        # PHP/share, as-of reference
+week52_low: 16.50                   # approx 2024 range (sourced reference)
+week52_high: 27.00
 
 # --- stable / slow-moving ---
 beta: 0.46

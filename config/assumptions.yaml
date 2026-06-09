@@ -4,30 +4,47 @@
 
 valuation:
   as_of_date: "2024-11-14"          # filing signature date
+  base_year: 2024                    # FY2024E base = 9M-2024 actuals annualized
   forecast_start_year: 2025
-  explicit_forecast_years: 5         # model discounts 2025-2029...
-  note_table_years: [2024, 2025, 2026, 2027]   # ...note summary displays 2024A-2027F
+  explicit_forecast_years: 5         # model discounts 2025E-2029E...
+  note_table_years: [2024, 2025, 2026, 2027]   # ...note summary displays 2024E-2027F
 
-  # Discount rate (WACC) inputs — CAPM cost of equity + after-tax cost of debt
+  # Cost of equity — CAPM with an explicit country risk premium. This uses the OBSERVED
+  # beta (0.46) honestly: Ke = rf + beta*mature_ERP + country_risk_premium. A raw
+  # observed-beta CAPM understates the discount rate for a thinly-traded, single-concession
+  # EM utility, so the country/liquidity risk is added explicitly rather than via beta.
   risk_free_rate: 0.060              # PH 10Y govt bond, late 2024
-  equity_risk_premium: 0.070         # Damodaran PH total ERP (mature + country risk)
-  beta: 0.46                         # observed (utility < 1)
+  mature_market_erp: 0.046           # Damodaran mature-market equity risk premium
+  beta: 0.46                         # observed trailing beta (also shown in the note data box)
+  country_risk_premium: 0.030        # PH country/liquidity premium (Damodaran)
+  # -> cost of equity = 0.060 + 0.46*0.046 + 0.030 = ~0.111
+
   pretax_cost_of_debt: 0.057         # PH utility credit; cross-checked vs filing interest/debt
   tax_rate: 0.25                     # CREATE Act corporate rate
 
-  terminal_growth: 0.030             # ~BSP long-run inflation mid-target
+  # Capital structure for WACC — NORMALIZED target weights (the utility is currently
+  # ~64% debt at a depressed equity price; a fair-value WACC uses a deleveraged target).
+  target_equity_weight: 0.60
+  target_debt_weight: 0.40
+  # -> WACC = 0.60*Ke + 0.40*Kd_after_tax = ~0.084
 
-# Forecast drivers (fade). Margins/ratios are anchored to extracted actuals in dcf.py;
-# these knobs scale them. Revenue growth fades toward terminal growth.
+  terminal_growth: 0.025             # below long-run GDP; reflects a mature, partly finite concession
+
+# Forecast drivers. Margins/ratios anchor to extracted FY2024E actuals; these knobs scale them.
 forecast_drivers:
-  revenue_growth:
+  revenue_growth:                    # fades toward terminal growth
     2025: 0.10
     2026: 0.08
     2027: 0.07
     2028: 0.06
     2029: 0.05
-  # The following default to the trailing actuals if left null (computed in dcf.py).
-  ebit_margin: null                  # operating margin; null → derive from filing
-  da_pct_revenue: null
-  capex_pct_revenue: null
+  ebit_margin: null                  # null -> derive from filing (operating income / revenue)
+  da_pct_revenue: null               # null -> derive from filing
+  # CapEx fades from the current investment peak toward a normalized rate-base level.
+  capex_pct_revenue_terminal: 0.30   # terminal capex/revenue (still high: ongoing rate-base growth)
   nwc_change_pct_revenue: 0.01
+
+# Sensitivity grid for the Valuation tab (WACC x terminal growth)
+sensitivity:
+  wacc_deltas: [-0.010, -0.005, 0.0, 0.005, 0.010]
+  growth_deltas: [-0.010, -0.005, 0.0, 0.005, 0.010]

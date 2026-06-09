@@ -53,7 +53,7 @@ balance:
 cashflow:
   cfo:                      [net cash from operating activities, net cash provided by operating activities]
   depreciation_amortization: [depreciation and amortization]
-  capex:                    [additions to property, acquisitions of property and equipment, capital expenditures, additions to service concession]
+  capex:                    [service concession assets, additions to service concession assets, property and equipment and software, acquisitions of property and equipment, capital expenditures]
   cfi:                      [net cash used in investing activities]
   cff:                      [net cash from financing activities, net cash used in financing activities]
   net_change_cash:          [net increase (decrease) in cash, net increase in cash and cash equivalents]
