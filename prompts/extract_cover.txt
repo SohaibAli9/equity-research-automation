@@ -1,0 +1,17 @@
+You are extracting figures from the COVER SHEET of a Philippine SEC Form 17-Q filing.
+
+Return:
+- common_shares_outstanding: number of common shares outstanding (P=1.00 par), in shares
+  (not thousands). If a treasury-share exclusion is noted, return the outstanding figure.
+- preferred_shares_outstanding: number of preferred shares outstanding (P=0.10 par), in shares.
+- treasury_shares: treasury shares acquired by the Company, in shares (null if not stated).
+- debt_outstanding: total amount of debt outstanding as of the period end. If stated as
+  "P=103.06 billion", return 103060000 (i.e. in THOUSANDS, to match the financial statements).
+
+Rules:
+- Return plain numbers, no commas or currency symbols.
+- Shares are in absolute share counts; debt is in thousands of pesos.
+- Use null if a value is not present.
+
+Cover text:
+{page_text}

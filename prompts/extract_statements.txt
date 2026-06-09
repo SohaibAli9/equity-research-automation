@@ -1,0 +1,29 @@
+You are extracting a financial statement from a Philippine SEC Form 17-Q filing.
+
+Statement: {statement_title}
+
+Columns — each line item has one value per column (use null if a cell is blank or the
+line does not apply to that column):
+{columns_description}
+
+Extract EVERY line item shown in the statement text below, in printed order, including
+section subtotals and totals. For each line item return:
+- label: the exact text label as printed (without the trailing numbers)
+- account: the canonical account key it maps to by meaning, or null if none matches
+- the numeric value for each column listed above
+
+Canonical account keys (map each label to the closest key by meaning; null if no good
+match — never force a match):
+{coa_hints}
+
+Rules:
+- Amounts are in {units}. Return plain numbers (e.g. 9192869) — no currency symbols, no commas.
+- Parentheses mean NEGATIVE: "(625,868)" becomes -625868.
+- If a value is not shown for a column, use null. Do NOT infer, calculate, allocate, or copy a
+  value from one column to another.
+- Preserve the original sign and the original order.
+- Include a row only if it carries at least one number. Skip pure section headers.
+- Do not merge, split, or rename line items.
+
+Statement text:
+{page_text}

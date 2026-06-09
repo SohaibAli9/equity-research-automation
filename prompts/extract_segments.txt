@@ -1,0 +1,29 @@
+You are extracting the operating SEGMENT INFORMATION table (Note 15) from a Philippine
+SEC Form 17-Q filing.
+
+Extract ONLY the table for "as of and for the NINE MONTHS ended September 30, 2024".
+Ignore the comparative September 30, 2023 table entirely.
+
+The table has these segment columns (one value per metric per segment; null if blank):
+- manila_concession: "Manila Concession and Head Office"
+- domestic_subsidiaries: "Domestic Subsidiaries"
+- foreign_subsidiaries: "Foreign Subsidiaries"
+- consolidation_adjustments: "Consolidation adjustments" (often negative, in parentheses)
+- consolidated: "Consolidated" (the rightmost total column)
+
+For each metric row return:
+- metric: the row label exactly as printed (e.g. "Sales to external customers", "Net income
+  (loss) from continuing operations", "Segment assets excluding investment in associates")
+- account: a short snake_case key for the metric (e.g. revenue_external, net_income,
+  segment_assets), or null
+- the value for each of the five segment columns above
+
+Rules:
+- Amounts are in thousands. Plain numbers, no symbols or commas.
+- Parentheses mean NEGATIVE.
+- Use null where a cell is blank or shown as a dash.
+- The "consolidated" column must equal the sum across the other columns for each row — but do
+  NOT compute it; copy exactly what is printed.
+
+Statement text:
+{page_text}

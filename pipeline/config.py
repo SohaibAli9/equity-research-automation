@@ -46,6 +46,16 @@ FILING_META = {
     "edge_no": "61fd40f05ff48bbdabca0fa0c5b4e4d0",
 }
 
+# Known statement page ranges (0-based) for the active filing. A general classify
+# step can find these, but hardcoding the verified ranges is reliable for the demo.
+STATEMENT_PAGES = {
+    "income": [5, 6],        # comprehensive income (4 cols) + attribution/EPS
+    "balance": [3, 4],       # financial position: assets + liab/equity
+    "cashflow": [8],         # cash flows (p9 starts Notes)
+    "segments": [22, 23, 24],  # Note 15 segment table
+}
+MDNA_PAGES = list(range(33, 50))  # Management Discussion & Analysis (for commentary)
+
 # Period keys used across the income statement (4 columns) / BS (2) / CF (2).
 INCOME_PERIODS = ["q3_2024", "q3_2023", "ytd9m_2024", "ytd9m_2023"]
 BALANCE_PERIODS = ["fy_2024_09_30", "fy_2023_12_31"]
