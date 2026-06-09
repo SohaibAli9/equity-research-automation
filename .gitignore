@@ -1,0 +1,20 @@
+# generated outputs
+output/
+# render/scratch images from PDF inspection
+filings/_*.png
+# python
+__pycache__/
+*.pyc
+.venv/
+# internal working notes / methods (not for the public/client-facing repo)
+CLAUDE.md
+PROJECT.md
+research/
+notes/
+
+# secrets / env
+.env
+.env.*
+!.env.example
+# os
+.DS_Store

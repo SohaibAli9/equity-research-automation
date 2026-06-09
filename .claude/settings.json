@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /root/playground/equity-research-ai/.claude/hooks/update_project_md.py"
+          }
+        ]
+      }
+    ]
+  }
+}
